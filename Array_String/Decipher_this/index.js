@@ -37,6 +37,8 @@ function decipherThis(str) {
     .join(" ")
 }
 
+decipherThis('72olle 103doo 100ya')
+
 const result1 = decipherThis('72olle 103doo 100ya');
 
 console.log(result1)
