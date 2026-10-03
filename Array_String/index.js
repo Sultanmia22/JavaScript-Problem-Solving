@@ -17,12 +17,18 @@ console.log(doubleValues([1,2,3]))
 
 
 /* 
-!problem : Double Each Element using map()
+!problem : Find First Element Greater Than X
 
-description : Write `doubleValues(arr)` that returns a new array with every number doubled using `map()`.
+Write `findFirstGreater(arr, x)` using `find()` that returns the first number greater than x, or undefined if none exists.
 
-Example: doubleValues([1,2,3]) ➔ [2,4,6] 
+Example: findFirstGreater([1,5,8,3], 4) ➔ 5
 
 */
 
 //? Solution :
+
+function findFirstGreater(arr, x) {
+    return arr.find(num => num > x);
+}
+
+console.log(findFirstGreater([1, 5, 8, 3], 4))
