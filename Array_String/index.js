@@ -13,7 +13,7 @@ function doubleValues (arr) {
     return arr.map(num => num * 2);
 }
 
-console.log(doubleValues([1,2,3]))
+// console.log(doubleValues([1,2,3]))
 
 
 /* 
@@ -31,4 +31,23 @@ function findFirstGreater(arr, x) {
     return arr.find(num => num > x);
 }
 
-console.log(findFirstGreater([1, 5, 8, 3], 4))
+// console.log(findFirstGreater([1, 5, 8, 3], 4))
+
+
+
+/* 
+!problem : Check If Array Includes a Value
+
+Write `hasValue(arr, target)` that returns true/false whether the array contains target using `includes()` and also using `some()`.
+
+Example: hasValue([1,2,3], 2) ➔ true
+
+*/
+
+//? Solution :
+
+function hasValue(arr, target) {
+    return arr.includes(target);
+}
+
+console.log(hasValue([1, 2, 3], 5));
